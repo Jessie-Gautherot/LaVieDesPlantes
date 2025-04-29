@@ -1,0 +1,72 @@
+[26-Apr-2025 11:11:54 UTC] WordPress database error Table 'wp_e_events' already exists for query CREATE TABLE `wp_e_events` (
+			id bigint(20) unsigned auto_increment primary key,
+			event_data text null,
+			created_at datetime not null
+		) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci; made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, Elementor\Plugin->init, Elementor\Plugin->init_components, Elementor\Core\Admin\Admin->__construct, Elementor\Plugin->init_common, Elementor\Core\Common\App->init_components, Elementor\Core\Common\Modules\EventTracker\Module->__construct, Elementor\Core\Common\Modules\EventTracker\DB->__construct, Elementor\Core\Common\Modules\EventTracker\DB->create_table
+[26-Apr-2025 11:11:56 UTC] WordPress database error Duplicate key name 'created_at_index' for query ALTER TABLE wp_e_events
+    		ADD INDEX `created_at_index` (`created_at`)
+		 made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, Elementor\Plugin->init, Elementor\Plugin->init_components, Elementor\Core\Admin\Admin->__construct, Elementor\Plugin->init_common, Elementor\Core\Common\App->init_components, Elementor\Core\Common\Modules\EventTracker\Module->__construct, Elementor\Core\Common\Modules\EventTracker\DB->__construct, Elementor\Core\Common\Modules\EventTracker\DB->add_indexes
+[26-Apr-2025 12:48:00 UTC] WordPress database error Table 'local.wp_wc_webhooks' doesn't exist for query SELECT webhook_id
+				FROM wp_wc_webhooks
+				WHERE 1=1
+				AND `status` = 'active'
+				
+				
+				
+				
+				
+				
+				ORDER BY webhook_id DESC made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WooCommerce->init, WooCommerce->load_webhooks, wc_load_webhooks, WC_Data_Store->__call, WC_Webhook_Data_Store->get_webhooks_ids, WC_Webhook_Data_Store->search_webhooks
+[26-Apr-2025 12:48:48 UTC] WordPress database error Table 'local.wp_wc_admin_notes' doesn't exist for query SELECT note_id FROM wp_wc_admin_notes WHERE type = 'survey' ORDER BY note_id ASC made by require_once('wp-admin/admin.php'), do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, Automattic\WooCommerce\Admin\Notes\Notes::possibly_delete_survey_notes, WC_Data_Store->__call, Automattic\WooCommerce\Admin\Notes\DataStore->get_note_ids_by_type
+[26-Apr-2025 12:48:48 UTC] WordPress database error Table 'local.wp_wc_admin_notes' doesn't exist for query SELECT note_id FROM wp_wc_admin_notes WHERE name = 'surface_cart_checkout' ORDER BY note_id ASC made by require_once('wp-admin/admin.php'), do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, Automattic\WooCommerce\Blocks\Domain\Bootstrap->Automattic\WooCommerce\Blocks\Domain\{closure}, Automattic\WooCommerce\Blocks\InboxNotifications::delete_surface_cart_checkout_blocks_notification, Automattic\WooCommerce\Admin\Notes\Notes::delete_notes_with_name, WC_Data_Store->__call, Automattic\WooCommerce\Admin\Notes\DataStore->get_notes_with_name
+[26-Apr-2025 12:48:50 UTC] WordPress database error Table 'local.wp_wc_admin_notes' doesn't exist for query SELECT note_id FROM wp_wc_admin_notes WHERE name = 'wc-update-db-reminder' ORDER BY note_id ASC made by require_once('wp-admin/admin.php'), set_current_screen, WP_Screen->set_current_screen, do_action('current_screen'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Notes_Run_Db_Update::show_reminder, WC_Notes_Run_Db_Update::get_current_notice, WC_Data_Store->__call, Automattic\WooCommerce\Admin\Notes\DataStore->get_notes_with_name
+[26-Apr-2025 13:44:27 UTC] PHP Warning:  Undefined array key "editor_post_id" in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-content\plugins\elementor\modules\history\revisions-manager.php on line 363
+[26-Apr-2025 15:22:28 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[27-Apr-2025 11:09:23 UTC] PHP Warning:  include(C:\Users\User\Local Sites\laviedesplantes\app\public/wp-content/languages/plugins/contact-form-7-fr_FR.l10n.php): Failed to open stream: No such file or directory in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\l10n.php on line 1608
+[27-Apr-2025 11:09:23 UTC] PHP Warning:  include(): Failed opening 'C:\Users\User\Local Sites\laviedesplantes\app\public/wp-content/languages/plugins/contact-form-7-fr_FR.l10n.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\l10n.php on line 1608
+[27-Apr-2025 11:09:39 UTC] PHP Warning:  include(C:\Users\User\Local Sites\laviedesplantes\app\public/wp-content/languages/plugins/astra-sites-fr_FR.l10n.php): Failed to open stream: No such file or directory in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\l10n.php on line 1608
+[27-Apr-2025 11:09:39 UTC] PHP Warning:  include(): Failed opening 'C:\Users\User\Local Sites\laviedesplantes\app\public/wp-content/languages/plugins/astra-sites-fr_FR.l10n.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\l10n.php on line 1608
+[27-Apr-2025 12:29:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_gallery_image_ids() on bool in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-content\plugins\elementor\modules\ai\module.php:348
+Stack trace:
+#0 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(324): Elementor\Modules\Ai\Module->get_product_images_ajax('')
+#1 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-admin\admin-ajax.php(192): do_action('wp_ajax_element...')
+#4 {main}
+  thrown in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-content\plugins\elementor\modules\ai\module.php on line 348
+[27-Apr-2025 12:31:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_gallery_image_ids() on bool in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-content\plugins\elementor\modules\ai\module.php:348
+Stack trace:
+#0 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(324): Elementor\Modules\Ai\Module->get_product_images_ajax('')
+#1 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-admin\admin-ajax.php(192): do_action('wp_ajax_element...')
+#4 {main}
+  thrown in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-content\plugins\elementor\modules\ai\module.php on line 348
+[27-Apr-2025 12:36:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_gallery_image_ids() on bool in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-content\plugins\elementor\modules\ai\module.php:348
+Stack trace:
+#0 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(324): Elementor\Modules\Ai\Module->get_product_images_ajax('')
+#1 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-admin\admin-ajax.php(192): do_action('wp_ajax_element...')
+#4 {main}
+  thrown in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-content\plugins\elementor\modules\ai\module.php on line 348
+[27-Apr-2025 15:34:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_gallery_image_ids() on bool in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-content\plugins\elementor\modules\ai\module.php:348
+Stack trace:
+#0 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(324): Elementor\Modules\Ai\Module->get_product_images_ajax('')
+#1 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-admin\admin-ajax.php(192): do_action('wp_ajax_element...')
+#4 {main}
+  thrown in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-content\plugins\elementor\modules\ai\module.php on line 348
+[27-Apr-2025 15:39:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_gallery_image_ids() on bool in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-content\plugins\elementor\modules\ai\module.php:348
+Stack trace:
+#0 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(324): Elementor\Modules\Ai\Module->get_product_images_ajax('')
+#1 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\User\Local Sites\laviedesplantes\app\public\wp-admin\admin-ajax.php(192): do_action('wp_ajax_element...')
+#4 {main}
+  thrown in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-content\plugins\elementor\modules\ai\module.php on line 348
+[27-Apr-2025 16:09:03 UTC] PHP Warning:  Undefined array key "" in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-content\plugins\woocommerce\src\StoreApi\Utilities\PaymentUtils.php on line 109
+[27-Apr-2025 16:09:07 UTC] PHP Warning:  Undefined array key "" in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-content\plugins\woocommerce\src\StoreApi\Utilities\PaymentUtils.php on line 109
+[28-Apr-2025 10:15:56 UTC] PHP Warning:  Undefined array key "" in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-content\plugins\woocommerce\src\StoreApi\Utilities\PaymentUtils.php on line 109
+[28-Apr-2025 10:16:00 UTC] PHP Warning:  Undefined array key "" in C:\Users\User\Local Sites\laviedesplantes\app\public\wp-content\plugins\woocommerce\src\StoreApi\Utilities\PaymentUtils.php on line 109
